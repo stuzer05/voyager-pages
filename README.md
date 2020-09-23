@@ -1,5 +1,10 @@
 # Voyager Pages
 
+## Why fork?
+- Added named routes to the pages
+- Added url localization using  [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
+- Added page layout cuntomization database field
+
 This [Laravel](https://laravel.com/)/[Voyager](https://laravelvoyager.com/) module adds Pages to Voyager.
 
 Built by [Pivotal Agency](https://pivotal.agency/).
