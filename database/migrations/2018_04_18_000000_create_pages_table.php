@@ -27,6 +27,7 @@ class CreatePagesTable extends Migration
                 $table->enum('status', Page::$statuses)->default(Page::STATUS_INACTIVE);
                 $table->string('route_name')->nullable();
                 $table->string('layout')->nullable();
+                $table->string('site')->nullable();
                 $table->timestamps();
             });
         }
