@@ -2,6 +2,7 @@
 
 namespace Pvtl\VoyagerPages\Http\Controllers;
 
+use View;
 use Pvtl\VoyagerPages\Page;
 use TCG\Voyager\Http\Controllers\VoyagerBaseController;
 
@@ -22,6 +23,10 @@ class PageController extends VoyagerBaseController
     public function getPage($slug = 'home')
     {
         $page = Page::where(['slug' => $slug, 'status' => 'ACTIVE'])->firstOrFail();
+
+        View::composer('*', function($view) use ($page) {
+            View::share('page', $page);
+        });
 
         return view("{$this->viewPath}::modules.pages.default", [
             'page' => $page,
