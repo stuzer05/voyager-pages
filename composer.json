@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "tcg/voyager": "^1.1.8",
+        "stuzer05/voyager": "^1.1.8",
         "mcamara/laravel-localization": "^1.4"
     },
     "require-dev": {
@@ -47,5 +47,15 @@
         "post-package-install": [
             "@php artisan voyager-pages:install"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://larapack.io"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/stuzer05/voyager"
+        }
+    ]
 }
