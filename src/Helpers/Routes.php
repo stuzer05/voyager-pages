@@ -72,5 +72,9 @@ class Routes
                 });
             }
         }
+
+        // Fix for unit tests
+        // tests don't see generated routes from database
+        Route::getRoutes()->refreshNameLookups();
     }
 }
