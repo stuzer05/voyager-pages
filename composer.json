@@ -19,7 +19,7 @@
     "require": {
         "stuzer05/voyager": "dev-devel",
         "mcamara/laravel-localization": "^2.0",
-        "laravel/scout": "^10.8",
+        "laravel/scout": "^10.8"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5"
